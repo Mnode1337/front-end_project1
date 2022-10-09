@@ -1,0 +1,116 @@
+/* RESET */
+*,
+*::before,
+*::after {
+	/* Alternative box model */
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* TYPOGRAPHY */
+
+html {
+	font-size: 18px;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	/* 28/18px = 1,555*/
+	line-height: 1.55;
+	color: rgb(60, 58, 71) /* #3c3a47 */;
+}
+
+h1 {
+	/**
+    * font-size on the figma is 57
+    * 57/18px = 3,166
+    */
+	font-size: 3.15rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+h2 {
+    /**
+    * font-size on the figma is 32
+    * 32/18px = 1,77
+    */
+    font-size: 1.75rem;
+    font-weight: 300;
+    letter-spacing: -1px;
+    color: color: rgba(60, 58, 71, .8);
+}
+
+h3 {
+    /**
+    * font-size on the figma is 43
+    * 43/18px = 2.4
+    */
+    font-size: 2.4;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 2rem;
+}
+
+h3.large {
+    font-size: 3.15rem;
+}
+
+.dark h3 { color: rgb(255, 255, 255); }
+
+h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+p.section-intro {
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.dark p.section-intro {
+    color: rgba(255, 255, 255, .8);
+}
+
+p.number {
+   /** 43font-size/18px =  */
+   font-size: 2.4rem;
+   font-weight: 200;
+   color: rgba(60, 58, 71, .5);
+}
+
+p.large {
+    /* 32 / 18 =  */
+    font-size: 1.75rem;
+    font-weight: 200;
+    letter-spacing: -1px;
+}
+
+/* next typography element to style will be links */
+a {
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(159, 118, 87)/* #9F7657 */;
+}
+
+a:hover {
+    color: rgb(60, 58, 71);
+}
+
+form input,
+form textarea,
+form button{
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+
+
